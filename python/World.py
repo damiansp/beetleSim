@@ -1,3 +1,5 @@
+import numpy as np
+
 class World:
     def __init__(self, year, month):
         assert month >= 1 and month <= 12, \
@@ -6,8 +8,9 @@ class World:
         self.month = int(month)
 
     def __str__(self):
-        return ('The world is in year %d, month %d (%s)'
-                % (self.year, self.month, self.get_season()))
+        return (
+            'Year %d, month %d (%s)'
+            % (self.year, self.month, self.get_season()))
 
     def advance_time(self, years, months):
         self.year += years
@@ -25,7 +28,6 @@ class World:
         elif self.month < 9:
             return 'summer'
         return 'fall'
-        
 
 
 # Tests
