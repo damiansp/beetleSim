@@ -2,6 +2,7 @@ import numpy as np
 
 from cell import Cell
 
+
 class Grid:
     def __init__(self, dims):
         assert len(dims) == 2, 'dims must be of length 2'
@@ -14,4 +15,9 @@ class Grid:
                               for y in range(self.y_dim)])
 
     def __str__(self):
-        return 'Grid with dimensions %s' % self.grid.shape
+        return 'Grid with dimensions %s' % str(self.grid.shape)
+
+
+# Test
+#grid = Grid([10, 10])
+#print(grid)
