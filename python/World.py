@@ -31,11 +31,11 @@ class World:
 
 
 # Tests
-#world = World(2000, 1)
-#print(world)
-#world.advance_time(4, 7)
-#print(world)
-#world.advance_time(2, 11)
-#print(world)
-#world.advance_time(0, 25)
-#print(world)
+world = World(2000, 1)
+print(world)
+world.advance_time(4, 7)
+print(world)
+world.advance_time(2, 11)
+print(world)
+world.advance_time(0, 25)
+print(world)
